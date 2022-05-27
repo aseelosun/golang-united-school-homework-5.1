@@ -20,7 +20,7 @@ func (s *Square) Area() uint {
 	d := math.Sqrt(math.Pow(float64(s.start.x-s.End().x), 2) + math.Pow(float64(s.start.y-s.End().y), 2))
 	//math.Pow(float64(s.start.x-s.End().x), 2)
 	//math.Pow(float64(s.start.y-s.End().y),2)
-	area := math.Pow(d, 2)
+	area := math.Pow(d, 2) / 2
 	return uint(area)
 }
 
