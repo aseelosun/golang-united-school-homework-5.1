@@ -9,14 +9,15 @@ type Square struct {
 	a     uint
 }
 
-func (receiver) End() Point {
+func (p *Point) End(x int, y int) Point {
+	// implement me
+	return Point{x: x, y: y}
+}
+
+func (s *Square) Area() uint {
 	// implement me
 }
 
-func (receiver) Area() uint {
-	// implement me
-}
-
-func (receiver) Perimeter() uint {
+func (s *Square) Perimeter() uint {
 	// implement me
 }
