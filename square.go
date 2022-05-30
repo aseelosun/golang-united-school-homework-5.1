@@ -26,5 +26,5 @@ func (s *Square) Area() uint {
 
 func (s *Square) Perimeter() uint {
 	area := s.Area()
-	return area / 4
+	return uint(4) * uint(math.Sqrt(float64(area)))
 }
